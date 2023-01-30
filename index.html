@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegridy Farms</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <img class="imperiumLogo" src="images/ImperiumOfMan.png" alt="My Logo" width="110" height="70" hidden>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Tegridy <span>Farms</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger_menu.png" alt="Open Navigation" width="27" height="20">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="" alt="Close Navigation">
+                <ul class="primary-nav"> 
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#feature">Features</a></li> 
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Something1</a></li> <!-- Prepare for interal sub link-->
+                    <li class="major-btnfunction1-cta"><a href="#">Something2</a></li> <!-- Prepare for interal sub link-->
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Do you want some Tegridy?</p>
+                <h1>Tegridy WEED</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="watch-video-cta">
+                        <img src="images/watch-movie.png" alt="Watch a video" height="20em" width="20em">Watch a video
+                    </a>
+                </div>
+            </div>
+            <img src="images/SPTF_-_00346.webp" alt="Illustraion" class="hero-img">
+        </div>
+    </section>
+
+    <section id="feature" class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Tegridy Weeds</li>
+                <li>Halloween Special</li>
+                <li>Pandemic Speical</li>
+                <li>Christmas Special</li>
+                <li>St. Patrick's Day special</li>
+                <li>Streaming Services</li>
+            </ul>
+
+            <img src="images/tegridyweed.jpg" alt="holding phone">
+        </div>
+    </section>
+    
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/towelie.webp" alt="person">
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+                    <cite>- Towelie</cite>                        
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. example@gmail.com">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your thoughts"></textarea>
+                    
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>   
+            
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.3702639529834!2d114.14704731495543!3d22.339643985303216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040755a44b54cb%3A0x4e8e32f1a47c0204!2sEsri%20China%20(Hong%20Kong)%20Limited!5e0!3m2!1sen!2shk!4v1666071930934!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav') //we use querySelector because there is only 1 nav. If there is more than 1 we should use getElementbyId
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click',() => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+</body>
+</html>
